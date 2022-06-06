@@ -21,7 +21,7 @@ import {
 const Form = ({info,handleChange}) => {
     const {cardHolder, cardNumber,expMonth,expYear,cvc} = info;
 	return (
-		<Box w="40%" m="auto" mt="3%" color="#707070">
+		<Box w="40%" m="auto" mt="3%" color="rgb(246, 150, 182)">
 			<Heading textAlign="left" my="5%">
 				Payment Details
 			</Heading>
@@ -30,13 +30,13 @@ const Form = ({info,handleChange}) => {
 				<InputGroup>
 					<InputLeftElement
 						pointerEvents="none"
-						children={<FaUserPlus color="#C41E3A" />}
+						children={<FaUserPlus color="rgb(246, 150, 182)" />}
 					/>
 					<Input
 						type="text"
 						placeholder="Enter here..."
 						border="none"
-						borderBottom="1px solid red"
+						borderBottom="1px solid rgb(246, 150, 182)"
 						borderRadius="none"
                         name="cardHolder"
                         value={cardHolder}
@@ -48,13 +48,13 @@ const Form = ({info,handleChange}) => {
 				<InputGroup>
 					<InputLeftElement
 						pointerEvents="none"
-						children={<FaRegCreditCard color="#C41E3A" />}
+						children={<FaRegCreditCard color="rgb(246, 150, 182)" />}
 					/>
 					<Input
 						type="text"
 						placeholder="Enter here..."
 						border="none"
-						borderBottom="1px solid red"
+						borderBottom="1px solid rgb(246, 150, 182)"
 						borderRadius="none"
                         name="cardNumber"
                         value={cardNumber}
@@ -69,13 +69,13 @@ const Form = ({info,handleChange}) => {
 						<InputGroup>
 							<InputLeftElement
 								pointerEvents="none"
-								children={<FaRegCalendarAlt color="#C41E3A" />}
+								children={<FaRegCalendarAlt color="rgb(246, 150, 182)" />}
 							/>
 							<Input
 								type="text"
 								placeholder="Enter here..."
 								border="none"
-								borderBottom="1px solid red"
+								borderBottom="1px solid rgb(246, 150, 182)"
 								borderRadius="none"
                                 name="expMonth"
                                 value={expMonth}
@@ -90,13 +90,13 @@ const Form = ({info,handleChange}) => {
 						<InputGroup>
 							<InputLeftElement
 								pointerEvents="none"
-								children={<FaRegCalendarAlt color="#C41E3A" />}
+								children={<FaRegCalendarAlt color="rgb(246, 150, 182)" />}
 							/>
 							<Input
 								type="text"
 								placeholder="Enter here..."
 								border="none"
-								borderBottom="1px solid red"
+								borderBottom="1px solid rgb(246, 150, 182)"
 								borderRadius="none"
                                 name="expYear"
                                 value={expYear}
@@ -111,13 +111,13 @@ const Form = ({info,handleChange}) => {
 						<InputGroup>
 							<InputLeftElement
 								pointerEvents="none"
-								children={<FaLock color="#C41E3A" />}
+								children={<FaLock color="rgb(246, 150, 182)" />}
 							/>
 							<Input
 								type="text"
 								placeholder="Enter here..."
 								border="none"
-								borderBottom="1px solid red"
+								borderBottom="1px solid rgb(246, 150, 182)"
 								borderRadius="none"
                                 name="cvc"
                                 value={cvc}
@@ -130,10 +130,10 @@ const Form = ({info,handleChange}) => {
 
 			<Flex direction="row" mt="5%" justifyContent="center">
 				<Text fontSize="lg">Payment Amount:</Text>
-				<Text fontSize='lg' color="red">14000 ₹</Text>
+				<Text fontSize='2xl' mt="-6px" ml="8px" color="rgb(246, 150, 182)">12,300 ₹</Text>
 			</Flex>
 
-            <Button colorScheme='red' mt="5%" width="150px" >Pay</Button>
+            <Button bgColor="hotpink" color="white" mt="5%" ml="40%" width="150px" >Pay</Button>
 		</Box>
 	);
 };

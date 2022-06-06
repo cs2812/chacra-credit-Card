@@ -10,7 +10,7 @@ const CreditCard = ({info}) => {
 			m="auto"
 			my="5%"
 			color="white"
-			bgGradient="linear(to-r,#333333, #dd1818)"
+			bgGradient="linear(to-r,#f6425b,#f6425b)"
 			borderRadius="15px"
 
 		>
